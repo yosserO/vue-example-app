@@ -22,9 +22,6 @@ export default {
 </script>
 
 <style>
-  body {
-    background-image:url('./assets/photography.png');
-  }
   main {
     margin-top: 40px;
   }
