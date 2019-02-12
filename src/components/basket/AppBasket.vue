@@ -27,7 +27,7 @@
     },
     computed: {
       articles: function() {
-        return this.$store.getters['articles'];
+        return this.$store.getters['basket'];
       },
       numberOfArticles: function() {
         return this.$store.getters['numberOfArticles']
