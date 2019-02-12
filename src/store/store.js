@@ -28,6 +28,7 @@ export const store = new Vuex.Store({
         articleById: (state) => (id) => {
             return _.find(state.articles, ['id', id])
         },
+        basket: state => state.basket,
         numberOfArticles: state => _.chain(state.basket)
             .map('count')
             .sum()
