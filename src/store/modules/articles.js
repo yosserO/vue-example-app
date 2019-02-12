@@ -21,7 +21,7 @@ export default {
   getters: {
     articleList: state => state.articles,
     articleById: (state) => (id) => {
-      return _.get(state.articles, id)
+      return _.find(state.articles, ['id', id]) // -> this.$store.getters.articleById('photography2')
     }
   },
 }

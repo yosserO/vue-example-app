@@ -39,7 +39,9 @@
     },
     methods: {
       addToBasket: function(photo) {
+        // this.$store.dispatch('addToBasket', photo)
         this.$store.dispatch('basket/addToBasket', photo)
+        // this.$store.dispatch('basket/addToBasketExample', photo)
       }
     }
   }

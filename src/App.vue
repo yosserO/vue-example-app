@@ -17,7 +17,7 @@ export default {
   name: 'App',
   components: {
     AppNav,
-  }
+  },
 }
 </script>
 
