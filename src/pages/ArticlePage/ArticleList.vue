@@ -34,14 +34,12 @@
     name: "ArticleList",
     computed: {
       articles: function() {
-        return this.$store.getters['articles/articleList'];
+        return this.$store.getters['articleList'];
       }
     },
     methods: {
       addToBasket: function(photo) {
-        // this.$store.dispatch('addToBasket', photo)
-        this.$store.dispatch('basket/addToBasket', photo)
-        // this.$store.dispatch('basket/addToBasketExample', photo)
+        this.$store.dispatch('addToBasket', photo)
       }
     }
   }
