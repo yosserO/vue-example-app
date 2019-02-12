@@ -23,7 +23,7 @@
     },
     computed: {
       visibleBasket: function() {
-        return this.$store.getters['basket/isVisible']
+        return this.$store.getters['isVisible']
       }
     }
   }

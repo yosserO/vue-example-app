@@ -36,6 +36,7 @@ export const store = new Vuex.Store({
             .map('price')
             .sum()
             .value(),
+        isVisible: state => state.isVisible
     },
     actions: {
         addToBasket (context, article) {

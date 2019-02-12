@@ -27,13 +27,13 @@
     },
     computed: {
       articles: function() {
-        return this.$store.getters['basket/articles'];
+        return this.$store.getters['articles'];
       },
       numberOfArticles: function() {
-        return this.$store.getters['basket/numberOfArticles']
+        return this.$store.getters['numberOfArticles']
       },
       totalAmountToPay: function() {
-        return this.$store.getters['basket/totalAmountToPay']
+        return this.$store.getters['totalAmountToPay']
       }
     }
   }
