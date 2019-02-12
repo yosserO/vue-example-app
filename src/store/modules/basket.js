@@ -19,7 +19,7 @@ export default {
       .sum()
       .value(),
     exampleGetter: (state, getters, rootState, rootGetters) => {
-      const sum = getters.totalAmountToPay()
+      const sum = getters.totalAmountToPay
       const loading = rootGetters.isLoading
     }
 },
