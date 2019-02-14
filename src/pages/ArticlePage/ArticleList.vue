@@ -34,7 +34,7 @@
     name: "ArticleList",
     computed: {
       articles: function() {
-        return this.$store.getters.articleList;
+        return this.$store.getters.articleList
       }
     },
     methods: {
