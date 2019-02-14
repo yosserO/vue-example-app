@@ -1,8 +1,8 @@
 import _ from 'lodash'
 
 export default {
-  namespaced: true, //this.$store.getters[basket/articles]
-  // namespaced: false, //this.$store.getters[articles]
+  namespaced: true, //this.$store.getters['basket/articles']
+  // namespaced: false, //this.$store.getters['articles']
   state: {
     articles: [],
     isVisible: false,
@@ -62,7 +62,7 @@ export default {
         monthlyArticles: [],
       },
       getters: {
-        monthlyArticles: state => state.monthlyArticles, // -> this.$store.getters[basket/monthlyArticles]
+        monthlyArticles: state => state.monthlyArticles, // -> this.$store.getters['basket/monthlyArticles']
       }
     },
     once: {
@@ -71,7 +71,7 @@ export default {
         uniqueArticles: [],
       },
       getters: {
-        uniqueArticles: state => state.uniqueArticles, // -> this.$store.getters[basket/once/uniqueArticles]
+        uniqueArticles: state => state.uniqueArticles, // -> this.$store.getters['basket/once/uniqueArticles']
       }
     }
   }
